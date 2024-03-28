@@ -1,95 +1,82 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import './globals.css'
+import Image from 'next/image'
+import hero1 from '../public/hero1.webp'
+import hero2 from '../public/hero2.webp'
+import hero3 from '../public/hero3.webp'
+import hero4 from '../public/hero4.webp'
+import product1 from '../public/product1.webp'
+import product2 from '../public/product2.jpeg'
+import product3 from '../public/product3.jpeg'
 
-export default function Home() {
+function page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <div className="container">
+      <div className="banner">
+        <div className="text">
+          <h1>We are changing the way people shop</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore repellat explicabo enim soluta temporibus asperiores aut obcaecati perferendis porro nobis.</p>
+          <button className="btn">OUR PRODUCTS</button>
+        </div>
+        <div className="main-raight carousel">
+          <div className="carousel_item">
+                <Image
+                src={hero1}
+                />
+           </div>
+           <div className="carousel_item">
+           <Image
+                src={hero2}
+                />
+           </div>
+           <div className="carousel_item">
+           <Image
+                src={hero3}
+                />
+           </div>
+           <div className="carousel_item">
+           <Image
+                src={hero4}
+                />
+           </div>               
+      </div>
+      </div>
+      <div className="featured_products">
+        <h1>Featured Products</h1>
+        <hr />
+        <div className="products">
+          <div className="product">
+          <Image
+                src={product1}
+                />
+            <div className="info">
+              <h2>Avant-garde lamp</h2>
+              <p>$179.99</p>
+            </div>
+          </div>
+          <div className="product">
+          <Image
+                src={product2}
+                />
+            <div className="info">
+              <h2>Coffee table</h2>
+              <p>$179.99</p>
+            </div>
+          </div>
+          <div className="product">
+          <Image
+                src={product3}
+                />
+            <div className="info">
+              <h2>Comfy Bed</h2>
+              <p>$129.99</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    </div>
+    </>
+  )
 }
+
+export default page
