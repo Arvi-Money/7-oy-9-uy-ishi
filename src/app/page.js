@@ -1,12 +1,13 @@
+import './page.module.css'
 import './globals.css'
 import Image from 'next/image'
-import hero1 from '../public/hero1.webp'
-import hero2 from '../public/hero2.webp'
-import hero3 from '../public/hero3.webp'
-import hero4 from '../public/hero4.webp'
-import product1 from '../public/product1.webp'
-import product2 from '../public/product2.jpeg'
-import product3 from '../public/product3.jpeg'
+import hero1 from '../../public/hero1.webp'
+import hero2 from '../../public/hero2.webp'
+import hero3 from '../../public/hero3.webp'
+import hero4 from '../../public/hero4.webp'
+import product1 from '../../public/product1.webp'
+import product2 from '../../public/product2.jpeg'
+import product3 from '../../public/product3.jpeg'
 
 function page() {
   return (
